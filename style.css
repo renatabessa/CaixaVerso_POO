@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 #geral-container {
   display: flex;
   flex-direction: column;
@@ -13,22 +17,35 @@
   width: 100vw;
 }
 
-#geral-container h1 {
+/* Estilos para o cabeçalho */
+
+#header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #333;
+}
+
+#header-container h1 {
   margin: 15px;
   font-size: 24px;
-  color: #007bff;
+  color: white;
 }
+
+/* Estilos para a seção de cadastro */
 
 #cadastro-container {
   display: flex;
   gap: 20px;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 90%;
+  max-width: 800px;
   padding: 20px;
   border: #333 solid 1px;
   border-radius: 15px;
-  margin-bottom: 10px;
+  margin: 10px;
 }
 
 #cadastro-aside {
@@ -47,8 +64,16 @@
 #cadastro-aside h2 {
   font-size: 20px;
   color: #007bff;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
+
+.cadastro-aside p {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
+/* Estilos para o formulário de cadastro */
 
 #cadastro-form {
   display: flex;
@@ -86,16 +111,31 @@
   margin-top: 10px;
 }
 
+/* Estilos para a seção de cardápio */
+#cardapio-container h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+
 .cardapio-area {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
 }
+
+
+
+/* Estilos para os cards de produtos */
+
 .cardapio-card {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 10px;
@@ -105,7 +145,7 @@
   width: 230px;
   align-items: center;
   background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .imagem-card {
@@ -118,13 +158,21 @@
 .titulo-card {
   font-size: 18px;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
 }
 
 .descricao-card {
   font-size: 14px;
   color: #555;
-  text-align: left;
+  text-align: center;
+}
+
+.footer-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding:  10px 0;
 }
 
 .preco-card {
@@ -132,4 +180,25 @@
   color: #007bff;
   font-weight: bold;
   text-align: left;
+}
+
+.btn-card {
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  font-size: 10px;
+  cursor: pointer;
+
+}
+
+
+/* Estilos para o rodapé */
+
+#footer-container {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  width: 100%;
+  text-align: center;
 }

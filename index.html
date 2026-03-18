@@ -19,6 +19,17 @@
           restaurante.
         </p>
         <p>Insira no formulário as informações do novo prato:</p>
+        <h2>Área de Pesquisa</h2>
+        <p>
+          Utilize a barra de pesquisa para encontrar pratos específicos no
+          cardápio. Digite o nome do prato ou parte dele e clique em "Pesquisar"
+          para exibir os resultados correspondentes.
+        </p>
+        <label for="pesquisa">Pesquisar prato:</label>
+        <input type="text" id="pesquisa" name="pesquisa" placeholder="Digite o nome do prato..." /> 
+        <button id="btn_pesquisa" type="button">Pesquisar</button>
+
+
       </div>
       <section id="secao-cadastro">
         <form id="cadastro-form">
@@ -61,57 +72,11 @@
     </aside>
 
     <main id="cardapio-container">
-      <section id="secao-prato">
-        <h2>Pratos</h2>
-        <div class="cardapio-area">
-          <!-- Exemplo do código a ser inserido via JS, os pratos serão adicionados dinamicamente via JavaScript -->
-          <div class="cardapio-card">
-            <img
-              class="imagem-card"
-              src="assets/massa-italiana-penne.jpg"
-              alt="Prato 1"
-            />
-            <h3 class="titulo-card">Massa Italiana Penne</h3>
-            <p class="descricao-card">
-              Uma deliciosa massa italiana com molho de tomate e manjericão.
-            </p>
-            <p class="preco-card">R$ 25,90</p>
-          </div>
-          <div class="cardapio-card">
-            <img
-              class="imagem-card"
-              src="assets/massa-italiana-penne.jpg"
-              alt="Prato 1"
-            />
-            <h3 class="titulo-card">Massa Italiana Penne</h3>
-            <p class="descricao-card">
-              Uma deliciosa massa italiana com molho de tomate e manjericão.
-            </p>
-            <p class="preco-card">R$ 25,90</p>
-          </div>
-          <div class="cardapio-card">
-            <img
-              class="imagem-card"
-              src="assets/massa-italiana-penne.jpg"
-              alt="Prato 1"
-            />
-            <h3 class="titulo-card">Massa Italiana Penne</h3>
-            <p class="descricao-card">
-              Uma deliciosa massa italiana com molho de tomate e manjericão.
-            </p>
-            <p class="preco-card">R$ 25,90</p>
-          </div>
-          <!-- Fim do código -->
-        </div>
-      </section>
+        <h2>Cardápio Disponível</h2>
+        <ul class="cardapio-area">
+        </ul>
 
-      <section id="secao-bebida">
-        <h2>Bebidas</h2>
-      </section>
 
-      <section id="secao-sobremesa">
-        <h2>Sobremesas</h2>
-      </section>
     </main>
 
     <footer id="footer-container">
