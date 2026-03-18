@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#geral-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  width: 100vw;
+}
+
+#geral-container h1 {
+  margin: 15px;
+  font-size: 24px;
+  color: #007bff;
+}
+
+#cadastro-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding: 20px;
+  border: #333 solid 1px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+#cadastro-aside {
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#cadastro-aside h2 {
+  font-size: 20px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+#cadastro-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#cadastro-form label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  align-self: flex-start;
+}
+
+#cadastro-form input,
+#cadastro-form textarea {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+#cadastro-form button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.cardapio-area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.cardapio-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  border: #333 solid 1.3px;
+  border-radius: 15px;
+  padding: 10px;
+  width: 230px;
+  align-items: center;
+  background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagem-card {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.titulo-card {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.descricao-card {
+  font-size: 14px;
+  color: #555;
+  text-align: left;
+}
+
+.preco-card {
+  font-size: 16px;
+  color: #007bff;
+  font-weight: bold;
+  text-align: left;
+}
